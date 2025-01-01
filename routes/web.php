@@ -1,13 +1,8 @@
 <?php
 
 use App\Http\Controllers\Auth\ForgotPasswordController;
-use App\Http\Controllers\Frontend\CheckoutController;
-use App\Http\Controllers\Frontend\CourseController;
 use App\Http\Controllers\Frontend\HomeController;
-use App\Http\Controllers\Frontend\InstructorController;
-use App\Http\Controllers\Frontend\LibraryController;
-use App\Http\Controllers\Frontend\PageController;
-use App\Http\Controllers\Frontend\StudentController;
+use App\Http\Controllers\StudentController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
@@ -27,3 +22,8 @@ Route::group(['prefix' => LaravelLocalization::setLocale(), 'middleware' => [ 'l
     Route::post('/storeB', [HomeController::class, 'storeB'])->name('storeB');
 
 });
+
+
+//Route::get('/nameer', [StudentController::class, 'index']);
+
+
